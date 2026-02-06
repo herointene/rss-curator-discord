@@ -1,12 +1,55 @@
-import feedparser
+import xml.etree.ElementTree as ET
+import urllib.request
+import urllib.error
 import random
-from datetime import datetime, timedelta
+from datetime import datetime
 
 def fetch_feed(url):
     """抓取 RSS feed"""
     try:
-        feed = feedparser.parse(url)
-        return feed.entries
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=30) as response:
+            data = response.read()
+            
+        # 解析 XML
+        root = ET.fromstring(data)
+        
+        # 处理 RSS 2.0 和 Atom 格式
+        entries = []
+        
+        # RSS 2.0
+        if root.tag == 'rss':
+            channel = root.find('channel')
+            if channel is not None:
+                for item in channel.findall('item'):
+                    entry = {
+                        'title': item.findtext('title', ''),
+                        'link': item.findtext('link', ''),
+                        'description': item.findtext('description', ''),
+                        'published': item.findtext('pubDate', ''),
+                    }
+                    entries.append(entry)
+        
+        # Atom
+        elif root.tag.endswith('feed'):
+            for entry_elem in root.findall('.//{http://www.w3.org/2005/Atom}entry'):
+                entry = {
+                    'title': entry_elem.findtext('{http://www.w3.org/2005/Atom}title', ''),
+                    'link': '',
+                    'description': entry_elem.findtext('{http://www.w3.org/2005/Atom}summary', ''),
+                    'published': entry_elem.findtext('{http://www.w3.org/2005/Atom}updated', ''),
+                }
+                # 获取 link
+                link_elem = entry_elem.find('{http://www.w3.org/2005/Atom}link')
+                if link_elem is not None:
+                    entry['link'] = link_elem.get('href', '')
+                entries.append(entry)
+        
+        return entries
+        
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         return []
@@ -23,17 +66,13 @@ def select_articles(sources_config, count=5):
             article = {
                 "title": entry.get("title", ""),
                 "link": entry.get("link", ""),
-                "summary": entry.get("summary", entry.get("description", ""))[:500],
+                "summary": entry.get("description", entry.get("summary", ""))[:500],
                 "published": entry.get("published", ""),
                 "source_name": source["name"],
                 "source_lang": source.get("lang", "en"),
                 "weight": source.get("weight", 1.0)
             }
             all_articles.append(article)
-    
-    # 按权重加权随机选择
-    if not all_articles:
-        return []
     
     # 去重
     seen_links = set()
@@ -44,6 +83,9 @@ def select_articles(sources_config, count=5):
             unique_articles.append(article)
     
     # 加权随机选择
+    if not unique_articles:
+        return []
+    
     weights = [a["weight"] for a in unique_articles]
     total_weight = sum(weights)
     if total_weight == 0:
