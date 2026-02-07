@@ -16,9 +16,9 @@ def send_article(article, webhook_url=None):
     link = article.get("link", "")
     source = article.get("source_name", "")
     
-    content = f"📰 **{title}**\n\n"
+    # 标题做成超链接 [标题](链接)
+    content = f"📰 [**{title}**]({link})\n\n"
     content += f"📝 {summary}\n\n"
-    content += f"🔗 {link}\n\n"
     content += f"📡 来源: {source}\n"
     content += "👍 👎 （点击表情投票）"
     
@@ -32,7 +32,9 @@ def send_article(article, webhook_url=None):
         print(f"Sent: {title[:50]}...")
         return True
     except Exception as e:
-        print(f"Error sending to Discord: {e}")
+        # Mask webhook URL in error logs
+        error_msg = str(e).replace(webhook_url, "******") if webhook_url else str(e)
+        print(f"Error sending to Discord: {error_msg}")
         return False
 
 def send_articles(articles, webhook_url=None):

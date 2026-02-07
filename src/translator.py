@@ -32,7 +32,11 @@ def translate_text(text, target_lang='zh', api_key=None):
             return result["data"]["translations"][0]["translatedText"]
         return text
     except Exception as e:
-        print(f"Translation error: {e}")
+        # Mask API key in error logs
+        error_msg = str(e)
+        if api_key:
+            error_msg = error_msg.replace(api_key, "******")
+        print(f"Translation error: {error_msg}")
         return text
 
 def translate_article(article, api_key=None):
