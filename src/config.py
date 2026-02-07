@@ -25,6 +25,9 @@ def load_ratings():
 
 def save_ratings(ratings):
     """保存评分数据"""
+    # 确保存储目录存在
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    
     with open(DATA_DIR / "ratings.json", "w", encoding="utf-8") as f:
         json.dump(ratings, f, ensure_ascii=False, indent=2)
 
