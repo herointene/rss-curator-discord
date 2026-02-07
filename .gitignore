@@ -20,8 +20,9 @@ Thumbs.db
 
 # Data
 data/*.json
-!data/.gitkeep
+!data/ratings.json
+!data/feedback.json
 
 # Config
-config/*.json
-!config/.gitkeep
+# config/*.json
+

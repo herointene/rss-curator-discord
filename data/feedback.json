@@ -1,0 +1,35 @@
+{
+  "week": "2026-02-06",
+  "messages": [
+    {
+      "source": "The Verge",
+      "title": "Aura 的 Aspen 数码相框是一款很棒的礼物，尤其现在还优惠 30 美元。",
+      "likes": 0,
+      "dislikes": 1
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "一项实验性手术正在帮助癌症幸存者分娩。",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "下载：尝试追踪人工智能和下一代核能",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "钉钉AI群聊全面升级：每个群聊配备专属助理'AI小钉'",
+      "likes": 0,
+      "dislikes": 1
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "从防护措施到治理：CEO保障代理系统安全的指南",
+      "likes": 0,
+      "dislikes": 1
+    }
+  ]
+}
