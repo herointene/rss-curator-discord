@@ -2,7 +2,20 @@ import xml.etree.ElementTree as ET
 import urllib.request
 import urllib.error
 import random
+import re
 from datetime import datetime
+
+def clean_content(text):
+    """清理 CDATA 标签和 HTML 标签"""
+    if not text:
+        return ""
+    # 移除 CDATA 标记
+    text = text.replace('<![CDATA[', '').replace(']]>', '')
+    # 移除简单的 HTML 标签
+    text = re.sub(r'<[^>]+>', '', text)
+    # 处理常见转义字符
+    text = text.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
+    return text.strip()
 
 def fetch_feed(url):
     """抓取 RSS feed"""
@@ -26,9 +39,9 @@ def fetch_feed(url):
             if channel is not None:
                 for item in channel.findall('item'):
                     entry = {
-                        'title': item.findtext('title', ''),
+                        'title': clean_content(item.findtext('title', '')),
                         'link': item.findtext('link', ''),
-                        'description': item.findtext('description', ''),
+                        'description': clean_content(item.findtext('description', '')),
                         'published': item.findtext('pubDate', ''),
                     }
                     entries.append(entry)
@@ -37,9 +50,9 @@ def fetch_feed(url):
         elif root.tag.endswith('feed'):
             for entry_elem in root.findall('.//{http://www.w3.org/2005/Atom}entry'):
                 entry = {
-                    'title': entry_elem.findtext('{http://www.w3.org/2005/Atom}title', ''),
+                    'title': clean_content(entry_elem.findtext('{http://www.w3.org/2005/Atom}title', '')),
                     'link': '',
-                    'description': entry_elem.findtext('{http://www.w3.org/2005/Atom}summary', ''),
+                    'description': clean_content(entry_elem.findtext('{http://www.w3.org/2005/Atom}summary', '')),
                     'published': entry_elem.findtext('{http://www.w3.org/2005/Atom}updated', ''),
                 }
                 # 获取 link
