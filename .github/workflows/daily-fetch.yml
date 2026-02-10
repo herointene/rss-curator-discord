@@ -2,9 +2,9 @@ name: Daily RSS Fetch
 
 on:
   schedule:
-    # 每天早上 9 点 JST (0:00 UTC)
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # 允许手动触发
+    # 8-20 点 JST 每两小时运行一次 (对应 UTC 23, 1, 3, 5, 7, 9, 11)
+    - cron: '0 23,1,3,5,7,9,11 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch-and-send:
@@ -17,16 +17,37 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
+        cache: 'pip'
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
+    - name: Restore Sent URLs Cache
+      id: cache-sent-urls
+      uses: actions/cache@v4
+      with:
+        path: data/sent_urls.json
+        key: sent-urls-${{ github.run_id }}
+        restore-keys: |
+          sent-urls-
+
     - name: Run RSS Curator
       env:
-        GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        LLM_BASE_URL: "https://api.moonshot.cn/v1"
+        LLM_MODEL: "moonshot-v1-8k"
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        MAX_ARTICLES: 1
+        POST_DELAY_SEC: 5
       run: |
-        cd src
-        python main.py
+        mkdir -p data
+        python src/main.py
+
+    - name: Save Sent URLs Cache
+      uses: actions/cache/save@v4
+      if: always()
+      with:
+        path: data/sent_urls.json
+        key: sent-urls-${{ github.run_id }}
