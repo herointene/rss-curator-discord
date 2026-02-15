@@ -3,19 +3,25 @@
     {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/feed/",
-      "weight": 0.95,
-      "lang": "en"
-    },
-    {
-      "name": "The Verge",
-      "url": "https://www.theverge.com/rss/index.xml",
-      "weight": 0.6,
+      "weight": 1.0,
       "lang": "en"
     },
     {
       "name": "MIT Tech Review",
       "url": "https://www.technologyreview.com/feed/",
-      "weight": 0.9,
+      "weight": 0.91,
+      "lang": "en"
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://arstechnica.com/feed/",
+      "weight": 0.85,
+      "lang": "en"
+    },
+    {
+      "name": "Wired",
+      "url": "https://www.wired.com/feed/rss",
+      "weight": 0.8,
       "lang": "en"
     },
     {
@@ -27,25 +33,31 @@
     {
       "name": "量子位",
       "url": "https://www.qbitai.com/feed",
-      "weight": 0.6,
+      "weight": 0.55,
+      "lang": "zh"
+    },
+    {
+      "name": "InfoQ",
+      "url": "https://www.infoq.cn/feed",
+      "weight": 0.7,
       "lang": "zh"
     }
   ],
   "candidates": [
     {
-      "name": "Ars Technica",
-      "url": "https://arstechnica.com/feed/",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
       "lang": "en"
     },
     {
-      "name": "Wired",
-      "url": "https://www.wired.com/feed/rss",
+      "name": "Engadget",
+      "url": "https://www.engadget.com/rss.xml",
       "lang": "en"
     },
     {
-      "name": "InfoQ",
-      "url": "https://www.infoq.cn/feed",
-      "lang": "zh"
+      "name": "9to5Mac",
+      "url": "https://9to5mac.com/feed/",
+      "lang": "en"
     }
   ]
 }
