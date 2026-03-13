@@ -1,35 +1,599 @@
 {
-  "week": "2026-02-06",
+  "week": "2026-03-13",
   "messages": [
     {
-      "source": "The Verge",
-      "title": "Aura 的 Aspen 数码相框是一款很棒的礼物，尤其现在还优惠 30 美元。",
+      "source": "MIT Tech Review",
+      "title": "下载：宝可梦Go训练世界模型",
       "likes": 0,
-      "dislikes": 1
+      "dislikes": 0
     },
     {
       "source": "MIT Tech Review",
-      "title": "一项实验性手术正在帮助癌症幸存者分娩。",
+      "title": "下载：人工智能在伊朗战争中的作用",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "下载：模糊的人工智能监控法规",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "英特尔加强其桌面CPU阵容",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Nuro正在东京街头测试其自动驾驶技术",
       "likes": 1,
       "dislikes": 0
     },
     {
       "source": "MIT Tech Review",
-      "title": "下载：尝试追踪人工智能和下一代核能",
+      "title": "人工智能如何将伊朗冲突变成戏剧",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "下载：人工智能中重要的10件事",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "来自 GitHub 的数据表明，AI 工具正在创造便利循环",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Anduril 收购太空监视公司",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "优先发展能源智能",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "20亿砸向00后创业机器人公司",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "确保数字资产设备安全性的易用性要求",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "人文组织起诉美国",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "AI驱动的应用程序在长期保留用户方面存在困难",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "Cursor 正经历生死存亡",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "一组不太可能的线索帮助重建古代中国灾难",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "打败GPT-5.2，嵌入真实工业生产",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "电动空中出租车即将在26个州起飞",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "俄罗斯间谍使用的iPhone黑客工具包",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "2026澳大利亚大奖赛",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "五角大楼的人类学争议会吓跑初创公司",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "文远知行与吉利远程深化战略合作",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "OpenClaw最强外挂出现",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "龙虾最大痛点被官方插件升级",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "这家初创公司声称它能阻止闪电",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "迫使你的MacBook只充电至80%",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "Argo CD 3.3 带来更安全的 GitOps",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "PopSockets创始人谈打造病毒式业务",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "苔藓如何帮助定罪芝加哥墓地的盗墓者",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "卫星公司在揭露伊朗对美军基地的攻击后暂停图像服务",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "寻找难以捉摸的幽灵大象",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "汽车之家 AI 助手多 Agent 设计",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "叮咚！探索上面级已失效",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "网络骚扰进入人工智能时代",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Life EV正式拥有Rad Power Bikes",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "X正在测试一种新的广告格式",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "职业安全健康管理局调查Rivian仓库",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "当人工智能公司开战时，安全被抛在了脑后",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "工人们报告观看了人们使用洗手间的雷朋Meta-shot镜头",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "神经损伤、能量管理以及苹果电视",
       "likes": 1,
       "dislikes": 0
     },
     {
       "source": "量子位",
-      "title": "钉钉AI群聊全面升级：每个群聊配备专属助理'AI小钉'",
+      "title": "GPT-5.3 Instant上线",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "美国据称正在考虑实施全面的新芯片出口管制",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "企业级OpenClaw最强拍档",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "企业级OpenClaw最强拍档来了",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "下载：地球的震动，以及针对伊朗的人工智能打击",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "USB集线器可以节省您大量的麻烦",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "诉讼：谷歌双子座派男子执行暴力任务",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "OpenAI与五角大楼的妥协",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "阶跃星辰彻底开源 Step 3.5 Flash",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "Warper：由 Rust 驱动的 React 虚拟化库",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "麻省理工学院技术评论内部人士小组",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "通过人工智能和工业5.0转型寻找价值",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "我参加了迄今为止最大的反人工智能抗议活动之一",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "ChatGPT的新GPT-5.3即时模型将不再让你冷静下来",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "随着对月球的兴趣升温",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "吴恩达复盘百度岁月",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "人工智能正在重塑世界顶尖围棋选手的思维方式",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "特朗普FCC的平等时间打击并不平等",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "特许通讯获得FCC许可收购Cox",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "导弹攻击压垮海湾地区，送货司机仍在道路上",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "苹果新款iPhone 17e配备A19芯片",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "麻省理工学院技术评论是2026年美国机械工程师学会报告类决赛入围者",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "OpenAI扩展单主节点PostgreSQL",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "亚马逊云科技支持通过RDS for SQL Server数据库事件触发Lambda函数",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "谷歌通过将15kB数据压缩到700字节空间",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "SaaS进，SaaS出：以下是推动SaaS末日的因素",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "The Download: how AI is shaking up Go",
       "likes": 0,
       "dislikes": 1
     },
     {
+      "source": "Ars Technica",
+      "title": "在派拉蒙-华纳兄弟探索公司合并下",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "人类陷阱为自己所设",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "地区男子意外入侵6700台摄像头功能扫地机器人",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "为什么Netflix放弃了收购华纳兄弟的交易",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "千问AI春节DAU创历史新高",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "小米发布17 Ultra智能手机",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "DeepSeek新论文剧透V4新框架",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
       "source": "MIT Tech Review",
-      "title": "从防护措施到治理：CEO保障代理系统安全的指南",
+      "title": "美国在寻找火星生命的竞赛中领先",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "通过Session 0利用多样性打造高影响力团队",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "五角大楼采取行动将Anthropic列为供应链风险",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "史诗级输血！亚马逊、英伟达、软银联手投出1100亿美元",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "空军新型洲际弹道导弹即将试飞",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "OpenAI解雇员工",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "史上最疯狂高中：没有老师、全靠AI",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Mistral AI与全球咨询巨头埃森哲达成协议",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "下载：美国如何在寻找外星生命的竞赛中失去了领先地位",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "下载：介绍犯罪问题",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "诡异谷：五角大楼对抗觉醒的人类",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "纽约起诉Valve因允许通过战利品箱进行非法赌博",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "一种新的恢复免疫系统活力的方法",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "马斯克没有证据证明OpenAI窃取了xAI的商业机密",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "硅谷小丑莱利沃尔兹加入OpenAI",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "机器之心",
+      "title": "最强Coding Plan上线",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "量子位",
+      "title": "阿里发布三款中型千问3.5新模型",
+      "likes": 1,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "Meta、OpenAI 争抢收购 OpenClaw",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Wired",
+      "title": "孔雀促销代码",
       "likes": 0,
       "dislikes": 1
+    },
+    {
+      "source": "机器之心",
+      "title": "微软研究登上Nature",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "机器之心",
+      "title": "刚上完春晚，宇树新品机器狗就亮相了",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "最卷春节档，改写模型地板的只有 TA",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "机器之心",
+      "title": "八年积淀，中国人工智能迎来自主的世界级学术主场WAICA",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "CarGurus data breach affects 12.5 million accounts",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "机器之心",
+      "title": "从好看到能用：MIT用可微物理优化",
+      "likes": 0,
+      "dislikes": 0
     }
   ]
 }

@@ -19,5 +19,69 @@
       "dislikes": 1,
       "total_votes": 1
     }
+  },
+  "week_1773378752": {
+    "The Verge": {
+      "score": 0.0,
+      "likes": 0,
+      "dislikes": 1,
+      "total_votes": 1
+    },
+    "MIT Tech Review": {
+      "score": 0.67,
+      "likes": 2,
+      "dislikes": 1,
+      "total_votes": 3
+    },
+    "量子位": {
+      "score": 0.0,
+      "likes": 0,
+      "dislikes": 1,
+      "total_votes": 1
+    }
+  },
+  "week_1773378866": {
+    "MIT Tech Review": {
+      "score": 0.75,
+      "likes": 3,
+      "dislikes": 1,
+      "total_votes": 4
+    },
+    "Ars Technica": {
+      "score": 1.0,
+      "likes": 3,
+      "dislikes": 0,
+      "total_votes": 3
+    },
+    "TechCrunch": {
+      "score": 1.0,
+      "likes": 4,
+      "dislikes": 0,
+      "total_votes": 4
+    },
+    "InfoQ": {
+      "score": 1.0,
+      "likes": 2,
+      "dislikes": 0,
+      "total_votes": 2
+    },
+    "量子位": {
+      "score": 1.0,
+      "likes": 2,
+      "dislikes": 0,
+      "total_votes": 2
+    },
+    "Wired": {
+      "score": 0.0,
+      "likes": 0,
+      "dislikes": 1,
+      "total_votes": 1
+    },
+    "机器之心": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    }
   }
 }
