@@ -27,24 +27,41 @@
    pip install -r requirements.txt
    ```
 
-3. **配置环境变量**
+3. **配置環境變數**
+   
+   複製示例文件並填寫實際值：
    ```bash
-   # 必填：Discord Webhook 地址
+   cp .env.example .env
+   # 編輯 .env 文件填寫你的配置
+   ```
+   
+   需要的環境變數：
+   ```bash
+   # 必填：Discord Webhook 地址（用於發送文章）
    export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..."
 
-   # 必填：LLM 配置 (以 Kimi 为例)
+   # 必填：LLM 配置 (以 Kimi 為例)
    export LLM_API_KEY="your-api-key"
    export LLM_BASE_URL="https://api.moonshot.cn/v1"
    export LLM_MODEL="moonshot-v1-8k"
 
-   # 选填：运行参数
-   export MAX_ARTICLES=1        # 每次运行发送篇数
-   export POST_DELAY_SEC=5      # 多篇发送时的间隔时间
+   # 可選：反饋收集（用於權重更新）
+   export DISCORD_BOT_TOKEN="your_bot_token"      # Discord Bot Token
+   export DISCORD_CHANNEL_ID="your_channel_id"    # RSS 頻道 ID
+
+   # 選填：運行參數
+   export MAX_ARTICLES=1        # 每次運行發送篇數
+   export POST_DELAY_SEC=5      # 多篇發送時的間隔時間
    ```
 
-4. **运行**
+4. **運行**
    ```bash
+   # 發送 RSS 文章
    python src/main.py
+   
+   # 收集反饋並更新權重
+   python scripts/collect_feedback.py
+   python src/optimizer.py
    ```
 
 ---

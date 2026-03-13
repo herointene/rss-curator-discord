@@ -25,4 +25,7 @@ data/*.json
 
 # Config
 # config/*.json
+.env
+.env.local
+.env.*.local
 
