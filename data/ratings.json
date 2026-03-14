@@ -83,5 +83,19 @@
       "dislikes": 0,
       "total_votes": 1
     }
+  },
+  "week_1773379873": {
+    "TechCrunch": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    },
+    "Ars Technica": {
+      "score": 1.0,
+      "likes": 2,
+      "dislikes": 0,
+      "total_votes": 2
+    }
   }
 }
