@@ -12,6 +12,7 @@
 - **🧠 持久化去重**: 配合 GitHub Actions Cache，确保跨任务不推送重复内容。
 - **🌐 网页正文提取**: 引入 `trafilatura` 库，自动识别并抓取网页核心内容，告别 RSS 摘要的不完整性。
 - **💬 Discord 推送**: 格式化排版，支持来源标注及原文链接。
+- **🎯 AI 點評**: 每篇新闻附带一句 LLM 生成的批判性点评，犀利毒舌不重述摘要。
 - **⚙️ 高度可配置**: 通过环境变量轻松控制发送篇数、时间间隔及模型参数。
 
 ### 快速开始
@@ -70,6 +71,7 @@
 
 ### 1. 核心逻辑变更 (V2)
 - **翻译器重构**: `src/translator.py` 现已转向 LLM 总结模式。优先调用 `extract_content` 获取全文。
+- **點評生成**: `translator.py` 在生成摘要后，额外调用一次 LLM 生成批判性点评，存储于 `article["critique"]`，由 `discord_sender.py` 渲染为【點評】区块。
 - **去重机制**: 依赖 `data/sent_urls.json`。在 GitHub Actions 中需通过 `actions/cache` 持久化此文件。
 
 ### 2. 常用操作指令

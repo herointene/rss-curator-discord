@@ -54,6 +54,29 @@ def translate_article(article, env_vars):
         summary = response.choices[0].message.content.strip()
         article["summary_translated"] = summary
         
+        # 生成點評（批判性、毒舌、不重複摘要）
+        critique_prompt = f"""请针对以下新闻，用一句话给出批判性、毒舌的点评。
+要求：
+- 要有独立见解，不能只是重述新闻内容
+- 语气可以犀利、讽刺，甚至刻薄
+- 仅限一句话，50字以内
+
+新闻标题: {article['title']}
+新闻摘要: {summary}
+"""
+        
+        critique_response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": "你是一个犀利、毒舌的新闻评论员，擅长一针见血地指出问题。"},
+                {"role": "user", "content": critique_prompt}
+            ],
+            temperature=0.7,
+            max_tokens=100
+        )
+        
+        article["critique"] = critique_response.choices[0].message.content.strip()
+        
         # 同时翻译标题（如果不是中文）
         if article.get("source_lang") != "zh":
             title_response = client.chat.completions.create(

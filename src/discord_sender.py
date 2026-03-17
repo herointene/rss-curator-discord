@@ -19,6 +19,12 @@ def send_article(article, webhook_url=None):
     # 标题做成超链接 [标题](链接)
     content = f"📰 [**{title}**]({link})\n\n"
     content += f"📝 {summary}\n\n"
+    
+    # 添加點評（如果有）
+    critique = article.get("critique", "")
+    if critique:
+        content += f"【點評】{critique}\n\n"
+    
     content += f"📡 来源: {source}\n"
     content += "👍 👎 （点击表情投票）"
     
