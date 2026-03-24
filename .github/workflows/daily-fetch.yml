@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -26,7 +26,7 @@ jobs:
     
     - name: Restore Sent URLs Cache
       id: cache-sent-urls
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: data/sent_urls.json
         key: sent-urls-${{ github.run_id }}
@@ -46,7 +46,7 @@ jobs:
         python src/main.py
 
     - name: Save Sent URLs Cache
-      uses: actions/cache/save@v4
+      uses: actions/cache/save@v5
       if: always()
       with:
         path: data/sent_urls.json
