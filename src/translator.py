@@ -1,5 +1,6 @@
 import os
 import requests
+import json
 from openai import OpenAI
 import trafilatura
 
@@ -15,7 +16,7 @@ def extract_content(url):
     return ""
 
 def translate_article(article, env_vars):
-    """使用 LLM 生成摘要并翻译"""
+    """使用 LLM 生成摘要、点评和翻译（合并为单次调用）"""
     api_key = env_vars.get("LLM_API_KEY")
     base_url = env_vars.get("LLM_BASE_URL")
     model = env_vars.get("LLM_MODEL")
@@ -35,60 +36,36 @@ def translate_article(article, env_vars):
     try:
         client = OpenAI(api_key=api_key, base_url=base_url)
         
-        prompt = f"""请将以下文章总结为 3 句重点，并直接用中文输出。
+        # 合并为单次调用，使用 JSON 格式返回
+        prompt = f"""请将以下文章处理为三个部分，用 JSON 格式返回：
+1. summary: 用3句话总结文章重点（中文）
+2. critique: 用一句话给出批判性、毒舌的点评（50字以内，犀利讽刺）
+3. title_zh: 将标题翻译为中文（如果是中文标题则保持不变）
+
 文章标题: {article['title']}
 正文内容:
 {input_text[:4000]}
-"""
+
+返回格式必须是有效的 JSON: {{"summary": "...", "critique": "...", "title_zh": "..."}}"""
         
         response = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": "你是一个专业的新闻摘要助手。"},
+                {"role": "system", "content": "你是一个专业的新闻摘要助手和犀利评论员。请严格返回 JSON 格式。"},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.3,
-            max_tokens=500
+            temperature=0.5,
+            max_tokens=800,
+            response_format={"type": "json_object"}
         )
         
-        summary = response.choices[0].message.content.strip()
-        article["summary_translated"] = summary
+        result = json.loads(response.choices[0].message.content.strip())
+        article["summary_translated"] = result.get("summary", "")
+        article["critique"] = result.get("critique", "")
+        article["title_translated"] = result.get("title_zh", article["title"])
         
-        # 生成點評（批判性、毒舌、不重複摘要）
-        critique_prompt = f"""请针对以下新闻，用一句话给出批判性、毒舌的点评。
-要求：
-- 要有独立见解，不能只是重述新闻内容
-- 语气可以犀利、讽刺，甚至刻薄
-- 仅限一句话，50字以内
-
-新闻标题: {article['title']}
-新闻摘要: {summary}
-"""
-        
-        critique_response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": "你是一个犀利、毒舌的新闻评论员，擅长一针见血地指出问题。"},
-                {"role": "user", "content": critique_prompt}
-            ],
-            temperature=0.7,
-            max_tokens=100
-        )
-        
-        article["critique"] = critique_response.choices[0].message.content.strip()
-        
-        # 同时翻译标题（如果不是中文）
-        if article.get("source_lang") != "zh":
-            title_response = client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "user", "content": f"请将以下新闻标题翻译为中文，只要输出翻译结果：\n{article['title']}"}
-                ],
-                temperature=0.1
-            )
-            article["title_translated"] = title_response.choices[0].message.content.strip()
-            
     except Exception as e:
         print(f"LLM processing error: {e}")
+        # 出错时保留原文
         
     return article
