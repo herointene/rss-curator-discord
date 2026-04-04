@@ -3,43 +3,43 @@
     {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/feed/",
-      "weight": 2.36,
+      "weight": 2.24,
       "lang": "en"
     },
     {
       "name": "MIT Tech Review",
       "url": "https://www.technologyreview.com/feed/",
-      "weight": 0.86,
+      "weight": 0.82,
       "lang": "en"
     },
     {
       "name": "Ars Technica",
       "url": "https://arstechnica.com/feed/",
-      "weight": 1.67,
+      "weight": 2.0,
       "lang": "en"
     },
     {
       "name": "Wired",
       "url": "https://www.wired.com/feed/rss",
-      "weight": 0.16,
+      "weight": 0.15,
       "lang": "en"
     },
     {
       "name": "Solidot",
       "url": "https://www.solidot.org/index.rss",
-      "weight": 0.92,
+      "weight": 1.1,
       "lang": "zh"
     },
     {
       "name": "量子位",
       "url": "https://www.qbitai.com/feed",
-      "weight": 0.26,
+      "weight": 0.25,
       "lang": "zh"
     },
     {
       "name": "InfoQ",
       "url": "https://www.infoq.cn/feed",
-      "weight": 0.92,
+      "weight": 1.1,
       "lang": "zh"
     }
   ],
