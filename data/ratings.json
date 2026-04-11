@@ -97,5 +97,65 @@
       "dislikes": 0,
       "total_votes": 2
     }
+  },
+  "week_1774710174": {
+    "InfoQ": {
+      "score": 1.0,
+      "likes": 5,
+      "dislikes": 0,
+      "total_votes": 5
+    },
+    "TechCrunch": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    },
+    "Ars Technica": {
+      "score": 0.67,
+      "likes": 2,
+      "dislikes": 1,
+      "total_votes": 3
+    }
+  },
+  "week_1775315180": {
+    "Ars Technica": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    },
+    "InfoQ": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    },
+    "Solidot": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    }
+  },
+  "week_1775920201": {
+    "InfoQ": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    },
+    "Ars Technica": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    },
+    "Solidot": {
+      "score": 1.0,
+      "likes": 1,
+      "dislikes": 0,
+      "total_votes": 1
+    }
   }
 }
