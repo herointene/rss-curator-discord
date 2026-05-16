@@ -1,33 +1,59 @@
 {
-  "week": "2026-05-09",
+  "week": "2026-05-16",
   "messages": [
-    {"source": "Solidot", "title": "社媒博彩广告主要针对年轻男性用户", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "Mother Ventures 将母亲视为'经济引擎'", "likes": 0, "dislikes": 0},
-    {"source": "MIT Tech Review", "title": "下载：重塑试管婴儿的技术与阳台太阳能的兴起", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "美国国防承包商前高管因向俄罗斯经纪商出售黑客工具被判向前雇主支付1000万美元", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "Confluent将模式ID移至Kafka头部，以简化模式治理", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "腾讯AI协同办公前沿实践白皮书", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "FBI捣毁针对数千名受害者的钓鱼操作", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "让每个员工都有一个 Coding Agent：蚂蚁 Vibe Coding 平台落地半年后的实践经验", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "神秘模型屠榜多日、碾压Seedance 2.0！背后竟是阿里大招", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "MCP开发者峰会观察：网关、无状态请求与企业级落地路径", "likes": 0, "dislikes": 0},
-    {"source": "MIT Tech Review", "title": "The Download：Jeff VanderMeer独家故事与过于恐怖而不敢发布的AI模型", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "YouTube再次提高Premium价格，称90秒不可跳过广告是错误", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "Istio引入多集群、环境模式及推理功能，应对AI时代的不断发展", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "EFF 退出 X 平台", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "创始人可以从Anjuna的裁员与复苏中学到什么", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "Spotify 2025 年度回顾：AI 规模化叙事背后的隐私博弈", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "Meta推出Muse Spark模型，开启AI全面改革", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "全新世最暴力火山正在重新注满岩浆", "likes": 0, "dislikes": 0},
-    {"source": "Wired", "title": "2026年4月Paramount+优惠码与特惠活动", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "月球已上谷歌地图——阿尔忒弥斯II号真告诉我们什么新东西了吗？", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "报道称苹果折叠iPhone将于9月发布", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "苹果和联想的笔记本电脑最难维修", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "Valve为苹果Vision Pro推出原生Steam Link应用", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "Bluesky用户精通将一切归咎于'氛围编码'的艺术", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "ProxySQL推出多层的版本发布策略", "likes": 0, "dislikes": 0},
-    {"source": "量子位", "title": "持续霸榜！阿里千问3.6Plus问鼎全球大模型调用周榜冠军", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "'问题在于Sam Altman'：OpenAI内部人士不信任CEO", "likes": 0, "dislikes": 0},
-    {"source": "MIT Tech Review", "title": "将数据中心送入太空所需的四件事", "likes": 0, "dislikes": 0}
+    {
+      "source": "InfoQ",
+      "title": "ChatGPT 可以帮你理财了，但它也知道你的全部余额！用户：谢谢不用了",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "美国汉坦病毒病例为假阳性；邮轮疫情病例从11例降至10例",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "俄罗斯施压大学生成为战时无人机飞行员",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Review: Good Omens finale sticks the landing",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Solidot",
+      "title": "三位一体核试验现场发现新晶体",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "TechCrunch",
+      "title": "埃隆·马斯克的SpaceXAI自合并以来持续流失员工",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "Solidot",
+      "title": "天文学家观测 120 亿年前极小星系 LAP1-B",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "InfoQ",
+      "title": "智能体企业架构浮现：数据、模型、系统之外的控制平面｜ 技术趋势",
+      "likes": 0,
+      "dislikes": 0
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "The Download: bad news for inner Neanderthals, and AI warfare's h...",
+      "likes": 0,
+      "dislikes": 0
+    }
   ]
 }
