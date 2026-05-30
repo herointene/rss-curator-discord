@@ -1,22 +1,11 @@
 {
-  "week": "2026-05-23",
+  "week": "2026-05-30",
   "messages": [
-    {"source": "Ars Technica", "title": "The Boys is dead. Long live Vought Rising.", "likes": 0, "dislikes": 0},
-    {"source": "Wired", "title": "Lowe's Promo Codes: Up to $300 Off Appliances", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "GitHub faces survival battle", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "How VCs and founders use inflated ARR to crown AI startups", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "Spotify and Universal Music strike deal allowing fan-made AI covers and remixes", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "US government takes $2 billion equity stake in nine quantum computing firms", "likes": 0, "dislikes": 0},
-    {"source": "Wired", "title": "The Best Noise-Canceling Headphones for 2025", "likes": 0, "dislikes": 0},
-    {"source": "MIT Tech Review", "title": "AI agents are taking over, but nobody knows how to evaluate them", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "New study says US needs to build 1,000 nuclear reactors in next decade", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "Anthropic releases Claude Opus 4.1", "likes": 0, "dislikes": 0},
-    {"source": "量子位", "title": "Claude 4.1 release: coding ability surges", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "Why Stripe Atlas is the best choice for startup incorporation", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "OpenAI launches GPT-5, claims it's smarter, faster, cheaper", "likes": 0, "dislikes": 0},
-    {"source": "MIT Tech Review", "title": "Why AI companies are suddenly so interested in nuclear power", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "JD Logistics: Large Model and Agent Technology Practice", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "US accuses China of industrial-scale AI theft", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "Tencent Hy3 preview: parameter-efficient AI model", "likes": 0, "dislikes": 0}
+    {"source": "TechCrunch", "title": "创始人借印度法院裁决重燃对谷歌广告业务的批评", "likes": 0, "dislikes": 0},
+    {"source": "TechCrunch", "title": "Nvidia 200亿美元非收购后，AI芯片初创公司Groq据报融资6.5亿美元", "likes": 0, "dislikes": 0},
+    {"source": "InfoQ", "title": "把GPT-4o拉下神坛！星源智联合北大推出RoboAgent", "likes": 0, "dislikes": 0},
+    {"source": "Solidot", "title": "开源项目被发现包含了针对 AI 的删除代码指令", "likes": 0, "dislikes": 0},
+    {"source": "InfoQ", "title": "当码农成为历史：AI时代工程师的生存法则", "likes": 0, "dislikes": 0},
+    {"source": "Ars Technica", "title": "《帝国时代II：决定版》macOS版：一个值得尊敬的移植", "likes": 0, "dislikes": 0}
   ]
 }
