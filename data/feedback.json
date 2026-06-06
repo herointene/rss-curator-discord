@@ -1,11 +1,11 @@
 {
-  "week": "2026-05-30",
+  "week": "2026-06-06",
   "messages": [
-    {"source": "TechCrunch", "title": "创始人借印度法院裁决重燃对谷歌广告业务的批评", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "Nvidia 200亿美元非收购后，AI芯片初创公司Groq据报融资6.5亿美元", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "把GPT-4o拉下神坛！星源智联合北大推出RoboAgent", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "开源项目被发现包含了针对 AI 的删除代码指令", "likes": 0, "dislikes": 0},
-    {"source": "InfoQ", "title": "当码农成为历史：AI时代工程师的生存法则", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "《帝国时代II：决定版》macOS版：一个值得尊敬的移植", "likes": 0, "dislikes": 0}
+    {"source": "Solidot", "title": "大黄蜂能利用工具解决问题", "likes": 0, "dislikes": 0},
+    {"source": "Ars Technica", "title": "小型模块化核反应堆在首次测试中达到临界点", "likes": 0, "dislikes": 0},
+    {"source": "Solidot", "title": "超加工食品的加工过程可能与健康风险相关", "likes": 0, "dislikes": 0},
+    {"source": "Ars Technica", "title": "AT&T和Verizon在最高法院关于出售位置数据罚款的案件中败诉", "likes": 0, "dislikes": 0},
+    {"source": "TechCrunch", "title": "萨姆·阿尔特曼支持的核聚变初创公司Helion融资4.65亿美元，为微软建造发电厂", "likes": 0, "dislikes": 0},
+    {"source": "Ars Technica", "title": "Waymo自动驾驶出租车电池成为电网备用储能", "likes": 0, "dislikes": 0}
   ]
 }
