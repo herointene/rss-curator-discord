@@ -1,11 +1,11 @@
 {
-  "week": "2026-06-06",
+  "week": "2026-06-13",
   "messages": [
-    {"source": "Solidot", "title": "大黄蜂能利用工具解决问题", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "小型模块化核反应堆在首次测试中达到临界点", "likes": 0, "dislikes": 0},
-    {"source": "Solidot", "title": "超加工食品的加工过程可能与健康风险相关", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "AT&T和Verizon在最高法院关于出售位置数据罚款的案件中败诉", "likes": 0, "dislikes": 0},
-    {"source": "TechCrunch", "title": "萨姆·阿尔特曼支持的核聚变初创公司Helion融资4.65亿美元，为微软建造发电厂", "likes": 0, "dislikes": 0},
-    {"source": "Ars Technica", "title": "Waymo自动驾驶出租车电池成为电网备用储能", "likes": 0, "dislikes": 0}
+    {"source": "TechCrunch", "title": "FBI建造自己的模拟小镇以模拟现实世界网络攻击", "likes": 1, "dislikes": 0},
+    {"source": "TechCrunch", "title": "SpaceX、Anthropic和OpenAI的火热IPO之夏", "likes": 0, "dislikes": 0},
+    {"source": "Solidot", "title": "铠侠市值超过丰田跃居日本股市第一", "likes": 0, "dislikes": 0},
+    {"source": "MIT Tech Review", "title": "为什么重编程是当前逆转衰老最热门的方法", "likes": 0, "dislikes": 0},
+    {"source": "Ars Technica", "title": "在几乎崩溃后，NASA的深空网络在阿尔忒弥斯二号任务中表现良好", "likes": 0, "dislikes": 0},
+    {"source": "TechCrunch", "title": "美国国防承包商前高管因向俄罗斯经纪商出售黑客工具被判向前雇主支付1000万美元", "likes": 0, "dislikes": 0}
   ]
 }
