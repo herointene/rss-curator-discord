@@ -36,8 +36,8 @@ jobs:
     - name: Run RSS Curator
       env:
         LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-        LLM_BASE_URL: "https://api.xiaomimimo.com/v1"
-        LLM_MODEL: "mimo-v2-flash"
+        LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+        LLM_MODEL: ${{ secrets.LLM_MODEL }}
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         MAX_ARTICLES: 1
         POST_DELAY_SEC: 5
