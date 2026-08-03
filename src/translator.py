@@ -55,11 +55,32 @@ def translate_article(article, env_vars):
                 {"role": "user", "content": prompt}
             ],
             temperature=0.5,
-            max_tokens=800,
-            response_format={"type": "json_object"}
+            max_tokens=800
         )
         
-        result = json.loads(response.choices[0].message.content.strip())
+        content = response.choices[0].message.content.strip()
+        
+        # 尝试提取 JSON（处理可能的 markdown 代码块包裹）
+        if content.startswith("```json"):
+            content = content[7:]
+        if content.startswith("```"):
+            content = content[3:]
+        if content.endswith("```"):
+            content = content[:-3]
+        content = content.strip()
+        
+        # 尝试解析 JSON
+        try:
+            result = json.loads(content)
+        except json.JSONDecodeError:
+            # 如果直接解析失败，尝试找到 JSON 对象
+            import re
+            json_match = re.search(r'\{[^{}]*"summary"[^{}]*\}', content, re.DOTALL)
+            if json_match:
+                result = json.loads(json_match.group())
+            else:
+                raise ValueError(f"Cannot extract JSON from response: {content[:200]}")
+        
         article["summary_translated"] = result.get("summary", "")
         article["critique"] = result.get("critique", "")
         article["title_translated"] = result.get("title_zh", article["title"])
