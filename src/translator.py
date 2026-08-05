@@ -73,11 +73,15 @@ def translate_article(article, env_vars):
         try:
             result = json.loads(content)
         except json.JSONDecodeError:
-            # 如果直接解析失败，尝试找到 JSON 对象
+            # 如果直接解析失败，用花括号匹配提取完整 JSON 对象
             import re
-            json_match = re.search(r'\{[^{}]*"summary"[^{}]*\}', content, re.DOTALL)
-            if json_match:
-                result = json.loads(json_match.group())
+            start = content.find('{')
+            end = content.rfind('}')
+            if start != -1 and end > start:
+                try:
+                    result = json.loads(content[start:end+1])
+                except json.JSONDecodeError:
+                    raise ValueError(f"Cannot parse JSON from response: {content[:200]}")
             else:
                 raise ValueError(f"Cannot extract JSON from response: {content[:200]}")
         
