@@ -32,7 +32,7 @@ def _call_llm(client, model, system_prompt, user_prompt):
             {"role": "user", "content": user_prompt},
         ],
         temperature=0.5,
-        max_tokens=800,
+        max_tokens=1500,
     )
     return response.choices[0].message.content.strip()
 

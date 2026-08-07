@@ -12,7 +12,10 @@ def send_article(article, webhook_url=None):
     
     # 构建消息
     title = article.get("title_translated") or article.get("title", "")
-    summary = article.get("summary_translated") or article.get("summary", "")[:150]
+    # 不要用原始 RSS HTML 作为 summary 回退
+    summary = article.get("summary_translated", "")
+    if not summary:
+        summary = "（摘要生成失败，请点击原文查看）"
     link = article.get("link", "")
     source = article.get("source_name", "")
     
