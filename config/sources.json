@@ -3,19 +3,19 @@
     {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/feed/",
-      "weight": 1.18,
+      "weight": 1.12,
       "lang": "en"
     },
     {
       "name": "MIT Tech Review",
       "url": "https://www.technologyreview.com/feed/",
-      "weight": 0.34,
+      "weight": 0.32,
       "lang": "en"
     },
     {
       "name": "Ars Technica",
       "url": "https://arstechnica.com/feed/",
-      "weight": 1.05,
+      "weight": 1.0,
       "lang": "en"
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "Solidot",
       "url": "https://www.solidot.org/index.rss",
-      "weight": 0.73,
+      "weight": 0.69,
       "lang": "zh"
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "InfoQ",
       "url": "https://www.infoq.cn/feed",
-      "weight": 0.58,
+      "weight": 0.55,
       "lang": "zh"
     }
   ],
