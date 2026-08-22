@@ -1,7 +1,7 @@
 {
-  "week": "2026-08-15",
+  "week": "2026-08-22",
   "messages": [
-    {"source": "TechCrunch", "title": "No new reactions this week", "likes": 0, "dislikes": 0}
+    {"source": "TechCrunch", "title": "Discord read access restricted - using historical data", "likes": 0, "dislikes": 0}
   ],
-  "note": "Discord message read access not available - no new feedback data collected"
+  "note": "Weekly analytics run - no new reactions collected due to Discord API restrictions"
 }
