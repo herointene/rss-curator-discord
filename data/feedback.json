@@ -1,6 +1,119 @@
 {
-  "week": "2026-11-14",
+  "week": "2026-11-04",
   "days_back": 7,
-  "message_count": 0,
-  "messages": []
+  "message_count": 16,
+  "messages": [
+    {
+      "source": "TechCrunch",
+      "title": "I tried Apple's Siri Recaps. They're surprisingly useful — and a ...",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-04T18:21:04.877000+00:00"
+    },
+    {
+      "source": "Solidot",
+      "title": "奇客Solidot | Bethesda 宣布《上古卷轴VI：哨兵》",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-04T10:13:58.654000+00:00"
+    },
+    {
+      "source": "Solidot",
+      "title": "奇客Solidot | Tor Browser 16.0 释出",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-03T18:10:47.202000+00:00"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Third person dies of bird flu since virus started jumping to livestock",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-03T10:21:09.219000+00:00"
+    },
+    {
+      "source": "Solidot",
+      "title": "奇客Solidot | 小鼠研究显示阉割有助于长寿",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-02T20:35:33.252000+00:00"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-02T10:22:25.231000+00:00"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Over 25% of people lie to get antibiotics—and their lies aren't e...",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-01T16:58:03.090000+00:00"
+    },
+    {
+      "source": "Solidot",
+      "title": "奇客Solidot | Sam Altman 认为 PC 内存闲置太糟糕",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-11-01T09:56:01.442000+00:00"
+    },
+    {
+      "source": "MIT Tech Review",
+      "title": "Our climate models have a big, dangerous blind spot",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-31T15:55:30.848000+00:00"
+    },
+    {
+      "source": "InfoQ",
+      "title": "终于不是 AI 了：Lambda 直接运行 Express，API Gateway 还...",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-31T09:08:00.696000+00:00"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Hackers steal $6.3 billion from Binance in record crypto heist",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-30T16:54:40.452000+00:00"
+    },
+    {
+      "source": "Solidot",
+      "title": "奇客Solidot | 币安多达 30 亿美元数字货币被盗",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-30T09:21:17.279000+00:00"
+    },
+    {
+      "source": "Wired",
+      "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in t...",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-29T17:13:03.843000+00:00"
+    },
+    {
+      "source": "Solidot",
+      "title": "奇客Solidot | 加州亿万富翁投入逾 2.93 亿美元反对亿...",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-29T09:10:05.447000+00:00"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "Apple refreshes the iMac, entry-level MacBook Pro with the M6 chip",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-28T16:55:30.754000+00:00"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Bank of America kindly asks that you don't share your banking passw...",
+      "likes": 0,
+      "dislikes": 0,
+      "timestamp": "2026-10-28T09:10:38.980000+00:00"
+    }
+  ]
 }
